@@ -28,21 +28,27 @@ html {
 .logo {
     height: 50px;
     width: auto;
-    left: 10%;
-    position: absolute;
-    margin-top: 10px;
+    float: left;
+    margin-top: 20px;
+    
 }
 
 .main-nav {
-    right: 5%;
-    position: absolute;
+	float: right;
     list-style: none;
-    margin-top:10px;
+    margin-top: 40px;
 }
 
 .main-nav li {
     display: inline;
     margin-left: 40px;
+}
+
+.main-nav li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
 }
 
 /* ----------HEADING---------- */
