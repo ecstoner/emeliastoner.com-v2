@@ -54,7 +54,8 @@ header h2 {
 
 }
 
-.btn {
+.btn:link,
+.btn:visited {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -62,13 +63,33 @@ header h2 {
     border-radius: 200px;
 }
 
-.btn-full {
+.btn-full:link,
+.btn-full:visited {
     background-color: #3498db;
     border: 1px solid #3498db;
     color: #fff;
 }
 
-.btn-ghost {
+.btn-ghost:link,
+.btn-ghost:visited {
     border: 1px solid #3498db;
     color: #3498db;
+}
+
+
+.btn:hover,
+.btn:active {
+    background-color: #217dbb;
+
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #217dbb;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #217dbb;
+    color: #fff;
 }
