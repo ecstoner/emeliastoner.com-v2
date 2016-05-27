@@ -2,9 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,100' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
         <title>Emelia Stoner</title>
@@ -13,26 +16,135 @@
 
     </head>
     <body>
-	  <header>
+	  	<header>
 	      <nav>
-	        <div class="row">
-	            <img src="resources/css/img/logo-white.png" alt="logo" class="logo">
-		            <ul class="main-nav">
-	                <li><a href="">About</a></li>
-	                <li><a href="">Resume</a></li>
-	                <li><a href="">Portfolio</a></li>
-	                <li><a href="">Contact</a></li>
+	        <div class="nav-row row">
+	            <img src="resources/css/img/logo-green.png" alt="logo" class="logo">
+                <img src="resources/css/img/logo.png" alt="logo" class="logo-black">
+                <ul class="main-nav">
+	                <li><a class="js--scroll-to-about" href="#">About</a></li>
+	                <li><a class="js--scroll-to-projects" href="#">Portfolio</a></li>
+	                <li><a href="#">Resume</a></li>
+	                <li><a href="#">Contact</a></li>
 	            </ul>
 
 	        </div>
 	      </nav>
 
            <div class="hero-text-box">
-               <h1>Emelia Stoner</h1>
-               <h2>Software Engineer, Freelance Web Developer, Life Student</h2>
+               <h1 class="name">Emelia Stoner</h1>
+               <h2 class="lead">Software Engineer, Freelance Web Developer, Life Student</h2>
                <a class="btn btn-full" href="#">Hire me</a>
-               <a class="btn btn-ghost" href="#">Explore</a>
+               <a class="btn btn-ghost js--scroll-to-start" href="#">Explore</a>
            </div>
-       </header>
+		</header>
+
+		<section class="section-features js--section-features">
+          	<div class="row">
+              	<h2 class="hello">Hello, I'm <span class="emelia">Emelia</span>!</h2>
+              	<p class="el">
+	              	<span class="explore"> Explore</span> the site to <span class="learn">learn</span> more about me, my skills, and projects.</p>
+                 <p class="letsCreate"> Let's <a class="create" href="#">create</a> something beautiful together.</p>
+          	</div>
+
+          	<div class="row features">
+	          	<div class="col span-1-of-4 box">
+	                 <i class="ion-university big"></i>
+					 <h3>Learner</h3>
+					 <p>
+	                  I am on a constant search for new learning opportunities, both technical and otherwise. Sewing, skateboarding, roller-derby...You name it, I have tried it and can assuredly say I learned much from doing so.
+	                  </p>
+              	</div>
+
+			  	<div class="col span-1-of-4 box">
+                  	 <i class="ion-edit big"></i>
+				  	 <h3>Teacher</h3>
+				  	 <p>
+				  	Raised by two educators, I have grown to find pleasure in spreading knowledge. I always attempt to make the most of the skills I have accumulated over my lifetime by sharing them with others.
+                 	</p>
+              	</div>
+              	<div class="space">
+
+              	</div>
+              	<div class="col span-1-of-4 box">
+	              	<i class="ion-power big"></i>
+	              	<h3>Self-Motivated</h3>
+	              	<p>
+				  	 Enamored with the beauty of life, I am propelled by opportunities to enhance both myself and the community by which I am surrounded.
+				  	</p>
+              	</div>
+
+			  	<div class="col span-1-of-4 box">
+                  	<i class="ion-android-calendar big"></i>
+				  	<h3>Goal-Oriented</h3>
+				  	<p>
+                    For me, with a passion for learning, comes a passion for achievement. Each forward step toward the mastery of a skill or the completion of a project is a small victory to be celebrated.
+                  	</p>
+              	</div>
+
+          	</div>
+      	</section>
+
+	  	<section class="projects js--section-projects">
+		  	<ul class="showcase">
+			  	<li>
+			  		<figure class="project-photo">
+			  			<img src="resources/img/1.jpg" alt="People & Animal Learning Services">
+			  		</figure>
+			  	</li>
+			  	<li>
+			  		<figure class="project-photo">
+			  			<a href="omni"><img src="resources/img/2.jpg" alt="Omnifood"></a>
+			  		</figure>
+			  	</li>
+			  	<li>
+			  		<figure class="project-photo">
+			  			<img src="resources/img/3.jpg" alt="Jekyll">
+			  		</figure>
+			  	</li>
+			  	<li>
+			  		<figure class="project-photo">
+			  			<img src="resources/img/4.jpg" alt="Portfolio Design using Jekyll">
+			  		</figure>
+			  	</li>
+<!--
+
+			  	<li>
+			  		<figure class="project-photo">
+			  			<img src="resources/img/5.jpg">
+			  		</figure>
+			  	</li>
+
+			  	<li>
+			  		<figure class="project-photo">
+			  			<img src="resources/img/6.jpg">
+			  		</figure>
+			  	</li>
+			  	<li>
+			  		<figure class="project-photo">
+			  			<img src="resources/img/7.jpg">
+			  		</figure>
+			  	</li>
+			  	<li>
+			  		<figure class="project-photo">
+			  			<img src="resources/img/8.jpg">
+			  		</figure>
+			  	</li>
+-->
+		  	</ul>
+      </section>
+      
+      <section class="skills">
+          
+      </section>
+
+
+
+
+
+		<script   src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+		<script src="vendors/js/notify.min.js" ></script>
+      	<script src="vendors/js/jquery.waypoints.min.js" ></script>
+      	<script src="resources/js/script.js" type="text/javascript"></script>
     </body>
 </html>
