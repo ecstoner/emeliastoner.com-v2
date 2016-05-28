@@ -116,6 +116,31 @@
 }
 
 
+/* I emy stoner changed the following: */
+
+/*  GO HALF WIDTH AT LESS THAN 883 PIXELS */
+
+@media only screen and (max-width: 883px) {
+	.box:first-child {
+		margin-right: 15px;
+		
+	}
+	
+	.box:not(:last-child) {
+/* 		border: solid orange; */
+		height: 300px;
+		margin-left: 0;
+		
+	}
+	
+	.span-1-of-4 {
+		width: 47%; 
+	}
+}
+
+/* ==================thats it yo======================= */
+
+
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
 @media only screen and (max-width: 480px) {
