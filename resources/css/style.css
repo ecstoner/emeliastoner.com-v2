@@ -392,9 +392,11 @@ header h2 {
     color: white;
     height: 30px;
     line-height: 30px;
+/*
     transform: none;
     transition: all 0.4s ease-out;
     transition-property: transform;
+*/
 }
 .rating-details-histogram .text-inside {
     font-smoothing: antialiased;

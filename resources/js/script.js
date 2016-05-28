@@ -37,13 +37,17 @@ $("document").ready(function () {
 
 // Animation for skill histogram
 
-//	$('.js--skills').waypoint(function (direction) {
-//		if (direction == 'down') {
-//            $('.rating-details-histogram .histogram-bar').animate({color: orange}, 'fast', 'ease-out', function() {})
-//            console.log('Scrolled to waypoint!');
-//		}
-//    }, {
-//        offset: '50px;'
-//	});
+	$('.js--skills').waypoint(function (direction) {
+		if (direction == 'down') {
+            $('.bar1').animate({width: "100%"});
+            $('.bar2').animate({width: "78%"});
+            $('.bar3').animate({width: "34%"});
+            $('.bar4').animate({width: "12%"});
+            $('.bar5').animate({width: "3%"});
+            console.log('Scrolled to waypoint!');
+		}
+    }, {
+        offset: '200px;'
+	});
 
 
