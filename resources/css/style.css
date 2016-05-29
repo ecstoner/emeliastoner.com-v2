@@ -45,6 +45,7 @@ header {
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
+   
 }
 
 h3 {
@@ -251,6 +252,10 @@ header h2 {
 /* ABOUT */
 /* ------------------------------------------------- */
 
+.section-features {
+    background-color: #fff;
+    z-index: 9999;
+}
 /* Hello, I'm Emelia h2 tag*/
 .hello {
 	font-size: 180%
@@ -355,13 +360,6 @@ header h2 {
 
 
 /* ------------------------------------------------- */
-/* EDUCATION */
-/* ------------------------------------------------- */
-.education {
-    height: 720px;
-}
-
-/* ------------------------------------------------- */
 /* SKILLS */
 /* ------------------------------------------------- */
 
@@ -411,8 +409,12 @@ header h2 {
 .mini-skills {
     background-color: #fff;
     border-radius: 5px;
-    min-height: 140px;
+    min-height: 110px;
     box-shadow: 0 2px 2px #e3e3e3;
+}
+
+.mini-skills ul {
+    
 }
 
 .mini-skills h3 {
@@ -663,11 +665,42 @@ header h2 {
 }
 
 .testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/sublime.jpg);
+    width: 100%;
+    height: auto;
+/*    border: solid green;*/
+    margin: 0;
+    padding: 0;
+
+}
+
+.test {
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding-bottom: 4em;
+    overflow: hidden;
+    position: relative;
+}
+
+.test::after {
+    content="";
+    display: block;
+    clear: both;
+}
+
+.test::before {
+    content: ' ';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(img/sublime.jpg);
     background-size: cover;
-    color: #fff;
-    background-attachment: fixed;
-    
+    will-change: transform;
+    z-index: -1;
+
 }
 
 blockquote {
@@ -675,7 +708,9 @@ blockquote {
     font-style: italic;
     line-height: 145%;
     position: relative;
-    margin-top: 40px;
+    margin-top: 70px;
+/*    vertical-align: middle;*/
+    z-index:3;
     
 }
 
@@ -703,7 +738,14 @@ cite img {
     vertical-align: middle;
 }
 
-
+/* ------------------------------------------------- */
+/* EDUCATION */
+/* ------------------------------------------------- */
+.education {
+    height: 720px;
+    background-color: #fff;
+    z-index: 5;
+}
 
 
 /* ------------------------------------------------- */
