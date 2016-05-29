@@ -10,7 +10,7 @@ $("document").ready(function () {
 		}, {
 			offset: '50px;'
 	});
-	
+    
 // 	Scroll on buttons
 // Hire me
 
@@ -28,26 +28,63 @@ $("document").ready(function () {
 
 // Portfolio
 	$('.js--scroll-to-projects').click(function() {
-		$('html, body').animate({scrollTop: $('.js--section-projects').offset().top} , 1000)
+		$('html, body').animate({scrollTop: $('.js--section-projects').offset().top - 100} , 1000)
 	});
+		
+	
+// Scroll on menu
+/*
+	$(function() {
+	  $('a[href*="#"]:not([href="#"])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html, body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+	
+*/
+    
+    
+    
+//    Maps
+    map = new GMaps({
+        div: '.map',
+        lat: 39.1502138,
+        lng: -86.482635,
+        zoom: 13,
+    });
+    
+    map.addMarker({
+      lat: 39.1572393,
+      lng: -86.494946,
+      title: 'Bloomington',
+    });
+    
+    
+    
+
 
 });
 
 
 
-// Animation for skill histogram
-
+//// Animation for skill histogram
 	$('.js--skills').waypoint(function (direction) {
 		if (direction == 'down') {
-            $('.bar1').animate({width: "100%"});
-            $('.bar2').animate({width: "78%"});
-            $('.bar3').animate({width: "34%"});
-            $('.bar4').animate({width: "12%"});
-            $('.bar5').animate({width: "3%"});
-            console.log('Scrolled to waypoint!');
-		}
-    }, {
-        offset: '200px;'
+			$('.chart__bar').addClass('animateMe');
+			console.log("waypoint reached!");
+		}else if (direction == 'up') {
+            $('.chart__bar').removeClass('animateMe');
+        }
+		}, {
+			offset: '500px;'
 	});
 
 
